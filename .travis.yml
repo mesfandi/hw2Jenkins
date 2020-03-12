@@ -7,6 +7,7 @@ services:
 before_install:
     - docker build -t mesfandi/hw2 .
 
-#script:
+script:
     #- docker run mesfandi/CS645Homework2
-
+    - echo "skipping tests"
+        
