@@ -1,3 +1,5 @@
+language: java
+
 sodu: required
 services:
     - docker
