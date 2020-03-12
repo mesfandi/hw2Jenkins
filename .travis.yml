@@ -1,0 +1,11 @@
+sodu: required
+services:
+    - docker
+
+before_install:
+    - docker build -t mesfandi/CS645Homework2 .
+
+#script:
+    #- docker run mesfandi/CS645Homework2
+
+    
