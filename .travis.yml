@@ -10,4 +10,9 @@ before_install:
 script:
     #- docker run mesfandi/CS645Homework2
     - echo "skipping tests"
-        
+
+
+after_install:
+    - docker build -t mesfandi/hw2 .
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+    - docker push mesfandi/hw2
